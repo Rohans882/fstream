@@ -1,0 +1,1 @@
+* * * * * /usr/bin/curl http://localhost:3000/update_ip_list?api_key=API_KEY >> /var/log/cron.log 2>&1

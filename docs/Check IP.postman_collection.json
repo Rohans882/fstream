@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "554a4f5a-77a2-48c8-acc1-32d51fee1de7",
+		"name": "Check IP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://13.232.66.230:3000/check_ips",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{api_key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ips\": [\"223.236.10.202\", \"223.236.10.212\", \"3.250.188.245\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.232.66.230:3000/check_ips",
+					"protocol": "http",
+					"host": [
+						"13",
+						"232",
+						"66",
+						"230"
+					],
+					"port": "3000",
+					"path": [
+						"check_ips"
+					]
+				},
+				"description": "This Endpoint checks if IPs provided in array are banned or not."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

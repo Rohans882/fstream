@@ -1,0 +1,27 @@
+{
+  "name": "aws-ipban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "serve": "nodemon build/server.js",
+    "run": "node build/server.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "ip-subnet-calculator": "^1.1.8",
+    "nanoexpress": "^5.0.6",
+    "typescript": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "nodemon": "^2.0.7"
+  }
+}
